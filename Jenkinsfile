@@ -26,8 +26,7 @@ pipeline {
             steps {
                 sh """
                   echo 'my shell script'
-                  echo $gr
-                  eetings
+                  echo $greetings
                   sleep 10
                 """
             }

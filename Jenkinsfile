@@ -2,9 +2,12 @@ pipeline {
     agent {
        node {
            label 'AGENT'
-            
-    }
+        }
+        
 }
+     environment { 
+        greetings = 'hello jenkins'
+     }
 
     stages {
         stage('Build') {

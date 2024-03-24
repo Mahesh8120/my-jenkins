@@ -39,7 +39,7 @@ pipeline {
             steps {
                 sh """
                   echo 'my shell script'
-                  echo $greetings
+                   echo $greetings
                   
                 """
             }

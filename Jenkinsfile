@@ -47,7 +47,7 @@ pipeline {
         stage('params'){
             steps {
             sh """
-            echo "Hello ${params.PERSON}"
+                echo "Hello ${params.PERSON}"
 
                 echo "Biography: ${params.BIOGRAPHY}"
 
@@ -59,7 +59,8 @@ pipeline {
 
             """
              }
-       }
+        }
+    }
         post { 
             always { 
                  echo 'I will always say Hello again!'
@@ -71,6 +72,6 @@ pipeline {
                  echo 'I will say Hello when pipeline is success'
             }
         }
-    }
+    
 }
     
